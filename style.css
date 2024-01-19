@@ -1,0 +1,180 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Poppins:wght@600&display=swap');
+@viewport {
+    width: device-width;
+    height: device-height;
+    viewport-fit: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: poppins;
+    color: white;
+    background-color: rgb(44, 43, 43);
+    /* background: rgb(238,174,202); */
+background: radial-gradient(circle, rgb(35, 31, 33) 0%, rgb(18, 65, 119) 100%);
+    /* background: rgb(238,174,202);
+    background: -moz-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1); */
+  
+}
+.top-news:hover .top-news-data-container{
+    /* background: #171616; */
+    box-shadow: -13px -12px 43px black;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    height:90%;
+}
+.top-news{
+
+   
+    cursor: pointer;
+    width: 24em;
+    /* padding: 9px; */
+    height: 20em;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    gap: 9px;
+    
+    background-color: rgba(17, 25, 40, 0.511);
+   background-image: url(https://www.bing.com/th?id=ORMS.fd8cf5a52f1e5ae183412e60545c1305&pid=Wdp&w=308&h=178&c=14&rs=2&qlt=90);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: top;
+    border-radius: 12px;
+    border: 2px solid white;
+
+}
+.top-news-data-container{
+    transition-duration:  0.1s ;
+    /* position: absolute; */
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: space-evenly; */
+    /* gap: 2px; */
+    height: 50%;
+    background-color: rgb(25, 26, 27);
+    /* box-shadow: 0px -39px 32px black ; */
+    /* backdrop-filter: blur(12px) saturate(180%); */
+    /* -webkit-backdrop-filter: blur(16px) saturate(180%); */
+    /* box-shadow: 10px 10px 12px black; */
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+
+.top-news-image{
+    width: 100%;
+    border-radius: 12px;
+
+   
+
+}
+.top-news-title {
+    color: whitesmoke;
+    padding: 0.3rem;
+    /* border: 2px solid black; */
+     word-wrap: break-word;
+    font-weight: bolder;
+    width: 100%;
+    max-height: max-content;
+    overflow: hidden;
+    white-space: normal; /* Allow the text to wrap */
+    text-overflow: ellipsis; /* Display ellipsis for overflowed content */
+    width: 100%;
+  
+   
+
+}
+.top-news-description{
+   
+
+    width: 100%;
+    padding: 0.3rem;
+    max-height: 100%;
+    overflow: hidden;
+    white-space: normal; /* Allow the text to wrap */
+    text-overflow: ellipsis; /* Display ellipsis for overflowed content */
+    color: rgb(247, 247, 247);
+   
+}
+
+.publisher-details-div{
+    display: flex;
+    padding: 5px;
+    color: rgb(203, 192, 192);
+  
+   justify-content: space-between;
+   
+}
+
+.top-news-publisher-name{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(203, 192, 192);
+    /* border: 2px solid black; */
+    /* padding: 0.3rem; */
+    /* border-radius: 12px; */
+    /* background-color: rgba(17, 25, 40, 0.75); */
+    /* backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%); */
+    /* box-shadow: 10px 10px 12px black; */
+    /* background-color: rgba(17, 25, 40, 0.75); */
+    /* border-radius: 12px; */
+    /* border: 1px solid rgba(255, 255, 255, 0.125); */
+
+}
+
+
+
+.card {
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    box-shadow: 10px 10px 12px black;
+    background-color: rgba(17, 25, 40, 0.75);
+    /* border-radius: 12px; */
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* For Firefox */
+
+.top-news-container {
+    scrollbar-width: thin;
+    scrollbar-color: red transparent;
+}
+
+/* For Webkit (Chrome, Safari) */
+.top-news-container::-webkit-scrollbar {
+    width: 5px; /* Adjust the width as needed */
+}
+
+.top-news-container::-webkit-scrollbar-thumb {
+    background-color: rgb(49, 47, 47); /* Scrollbar thumb color */
+    width: 3px; /* Adjust the width as needed */
+}
+
+.top-news-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Scrollbar track color */
+}
+
+
+.trending-news{
+    padding: 7px;
+    border-radius: 12px;
+    width: 18em;
+    height: 8em;
+
+}
